@@ -1,0 +1,14 @@
+body{
+	background-color: gray;
+}
+
+a{
+	color : black;
+	text-decoration: underline;
+}
+
+a#solarsystemLink{
+	color : black;
+	text-decoration: underline;
+	font-size: 50px;
+}

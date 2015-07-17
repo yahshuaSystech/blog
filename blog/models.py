@@ -13,6 +13,8 @@ class Post(models.Model):
 		self.published_date = timezone.now()
 		self.save()
 
+	def testingFunc(self):
+		return "alde"
 
 	def __str__(self):
 		return self.title

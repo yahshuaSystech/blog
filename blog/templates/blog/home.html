@@ -1,0 +1,23 @@
+{% extends "blog/common.html" %}
+
+{% block alde %}
+	{% for post in posts %}
+		<br/>
+		<div>
+			<h2><h1><a href="{% url "post_detail" priKey=post.pk %}">{{ post.title }}</a></h1></h3>
+			<p><a href="{% url "post_edit" priKey=post.pk %}">Edit</a></p>
+			<p>{{post.published_date}}</p>
+			<p>{{post.text}}</p>
+			<p>{{post.pk}}</p>
+		</div>
+	{% endfor %} 
+
+	<br/>
+	<div>
+	 	<h3>{{onePost.title}}</h3>
+		<p>{{onePost.published_date}}</p>
+		<p>{{onePost.text}}</p>
+		<p>{{onePost.pk}}</p>
+	</div>
+	{{justonepost}}
+{% endblock alde %}
